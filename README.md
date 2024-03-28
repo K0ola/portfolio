@@ -1,6 +1,6 @@
 # Arthur Zachary's Portfolio 👽
 
-Welcome to the hub of my personal projects and professional milestones. Here's where creativity meets code.
+
 
 ## 🌐 Connect With Me 
 
