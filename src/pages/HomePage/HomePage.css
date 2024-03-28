@@ -1,0 +1,23 @@
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+
+#me{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family:'Source_Code_Pro';
+    font-size: 3em;
+
+}
+
+/* #home{
+    max-height: 100vh;
+} */

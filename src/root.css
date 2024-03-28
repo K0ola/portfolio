@@ -1,0 +1,80 @@
+/* Fonts */
+@font-face {
+    font-family: 'Inspiration';
+    src: url('../public/assets/fonts/Inspiration/Inspiration-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Madimi_One';
+    src: url('../public/assets/fonts/Madimi_One/MadimiOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source_Code_Pro';
+    src: url('../public/assets/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+section{
+    padding: 30px;
+}
+
+header{
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Inspiration';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);    
+    font-size: 10em;
+    margin: 1rem 0;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #dfcbff;
+    --color-tertiary: #300959;
+    --nav-font-size: 1.8em;
+    --nav-height: 60px;
+}
+
+
+::-webkit-scrollbar-track {
+    display: none;
+    background: #f1f1f100;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    display: none;
+
+    background: #88888800;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    display: none;
+
+    background: #55555500;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+
+    width: 10px;
+    height: 10px;
+  }
+  
