@@ -9,5 +9,5 @@ Welcome to the hub of my personal projects and professional milestones. Here's w
 
 ## 📱 Social Networks 
 
-- **📷 Instagram**: [ @_K0ola](https://www.instagram.com/_k0ola/)
-- **🔗 LinkedIn**: [ Arthur_Zachary](https://www.linkedin.com/in/arthur-zachary/)
+- **📷 Instagram**: [@_K0ola](https://www.instagram.com/_k0ola/)
+- **🔗 LinkedIn**: [Arthur Zachary](https://www.linkedin.com/in/arthur-zachary/)
