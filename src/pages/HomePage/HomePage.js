@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-// import { ObjectLoader } from '../../../node_modules/three/examples/jsm/loaders/ObjectLoader';
 import './HomePage.css';
 
 function HomePage() {
@@ -19,7 +18,8 @@ function HomePage() {
     const renderer = new THREE.WebGLRenderer({ antialias: true });
 
     renderer.setSize(window.innerWidth, window.innerHeight);
-    mountRef.current.appendChild(renderer.domElement);
+    const currentMount = mountRef.current;
+    currentMount.appendChild(renderer.domElement);
 
     const ambientLight = new THREE.AmbientLight(0x404040);
     scene.add(ambientLight);
@@ -36,7 +36,7 @@ function HomePage() {
     }, undefined, (error) => {
       console.error(error);
     });
-    const TextureLoader = new THREE.TextureLoader();
+
     const bloc_texture = new THREE.TextureLoader().load('./assets/imgs/jw.jpg', function (texture) {
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
       texture.offset.set(0, 0);
@@ -60,21 +60,15 @@ function HomePage() {
 
     const animate = () => {
       frameIdRef.current = requestAnimationFrame(animate);
-      
       renderer.render(scene, camera);
     };
 
     animate();
 
     const handleWindowResize = () => {
-      const { current: mount } = mountRef;
-      if (mount) {
-        const width = mount.clientWidth;
-        const height = mount.clientHeight;
-        renderer.setSize(width, height);
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-      }
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
     };
 
     const debounceResize = (function () {
@@ -90,9 +84,6 @@ function HomePage() {
     return () => {
       cancelAnimationFrame(frameIdRef.current);
       window.removeEventListener('resize', debounceResize);
-      if (mountRef.current) {
-        mountRef.current.removeChild(renderer.domElement);
-      }
 
       scene.traverse(function (object) {
         if (object.isMesh) {
