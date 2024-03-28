@@ -1,4 +1,4 @@
-# Arthur Zachary's Portfolio
+# Arthur Zachary's Portfolio 👽
 ### URL: https://arthur-zachary.dev
 ### Github: https://github.com/K0ola/New-portfolio
 
