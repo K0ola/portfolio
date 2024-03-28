@@ -2,7 +2,7 @@
 
 
 
-## 🌐 Connect With Me 
+## 🌐 Website informations
 
 - **🤖 Portfolio**: [arthur-zachary.dev](https://arthur-zachary.dev)
 - **💻 GitHub**: [K0ola/New-portfolio](https://github.com/K0ola/New-portfolio)
