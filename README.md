@@ -13,7 +13,7 @@
 - **🔗 LinkedIn**: [Arthur Zachary](https://www.linkedin.com/in/arthur-zachary/)
 
 
-## 💻 Available Scripts
+# 💻 Available Scripts
 
 In the project directory, you can run:
 
