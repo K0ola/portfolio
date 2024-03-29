@@ -49,8 +49,15 @@ function HomePage() {
     bloc.position.set(0.5, 1.5, -2);
 
     scene.add(bloc);
-    camera.position.set(1, 1.2, 1);
 
+    const portal_material = new THREE.MeshBasicMaterial();
+    const portal_geometry = new THREE.BoxGeometry(0.15, 0.3, 0.15);
+    const portal = new THREE.Mesh(portal_geometry, portal_material);
+    portal.position.set(-0.5, 1, 0.8);
+    scene.add(portal);
+
+
+    camera.position.set(1, 1.2, 1);
     camera.lookAt(new THREE.Vector3(-2, 1.2, -2));
 
 
