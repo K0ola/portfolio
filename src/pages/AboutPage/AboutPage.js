@@ -9,11 +9,11 @@ function AboutPage() {
       </header>
       <div>
       <img src='./assets/imgs/moi.png' alt='Arthur Zachary'></img>
-        <p>I am currently a second-year student in a University Technical Degree in Multimedia and Internet Professions (<span>BUT MMI</span>) at <span>Gustave Eiffel University</span>. By nature <span>very curious</span>, I am <span>serious</span>, committed, and never give up in the face of <span>difficulties</span>. Passionate about climbing, I love to take on <span>challenges</span>. I am recognized as being <span>very open</span>, <span>sociable</span>, with a touch of <span>humor</span> to complete my personality.</p>
+        <p>Je suis actuellement étudiant en deuxième année d'une Licence Professionnelle Universitaire en Métiers du Multimédia et de l'Internet (<span>BUT MMI</span>) à l'Université Gustave Eiffel. De <span>nature très curieux</span>, je suis <span>sérieux</span>, <span>engagé</span> et je ne renonce jamais face aux difficultés. <span>Passionné</span> d'escalade, j'aime relever les défis. On me reconnaît comme étant <span>très ouvert</span>, <span>sociable</span>, avec une touche d'<span>humour</span> pour compléter ma personnalité.</p>
       </div>
       <h2>My Video CV</h2>
       <div id='div_video_cv'>
-        <p>You can watch all of my video cv make for a student project</p>
+        <p>Vous pouvez regarder l'intégralité de mon CV vidéo réalisé dans le cadre d'un projet étudiant.</p>
         <video src='./assets/media/cv_video.mp4' alt="cv vidéo" controls></video>
 
       </div>
