@@ -12,6 +12,7 @@ function SkillsPage() {
   const rotationRef = useRef(0);
 
   useEffect(() => {
+    const orbitData = orbitDataRef.current;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -23,8 +24,13 @@ function SkillsPage() {
     light.position.set(0, 8, 5);
     scene.add(light);
 
-    const ambientLight = new THREE.AmbientLight(0xFF0000, 0.002);
+    const ambientLight = new THREE.AmbientLight(0xFF0000, 0.03);
     scene.add(ambientLight);
+
+
+    const PointLight = new THREE.PointLight(0xFF0000, 1, 100);
+    PointLight.position.set(0, 8, 0);
+    scene.add(PointLight);
 
     const modelLoader = new GLTFLoader();
     modelLoader.load('assets/models/skills/cross-legged.glb', (gltf) => {
@@ -38,13 +44,14 @@ function SkillsPage() {
     const radius = 5;
     const fontLoader = new FontLoader();
     fontLoader.load('assets/fonts/helvetiker_regular.typeface.json', (font) => {
-      const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'SCSS', 'SQL', 'Python', 'THREEJS', 'Blender', 'Photoshop', 'Illustrator', 'UI/UX', 'Teamwork'];
+      const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'SCSS', 'SQL', 'Python', 'THREEJS', 'Blender', 'Photoshop', 'Illustrator', 'UI/UX', 'PHP'];
       skills.forEach((skill, index) => {
         const angle = (Math.PI * 2 / skills.length) * index;
         const x = Math.cos(angle) * radius;
         const z = Math.sin(angle) * radius;
-        const lighted = new THREE.DirectionalLight(0x0000FF, 0.009);
+        const lighted = new THREE.DirectionalLight(0x0000FF, 0.01);
         lighted.position.set(x, 1, z);
+        lighted.lookAt(x, 0, z)
         scene.add(lighted);
         const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
         const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
@@ -54,7 +61,7 @@ function SkillsPage() {
     
         const textGeometry = new TextGeometry(skill, { font, size: 0.2, height: 0.01 });
         textGeometry.center();
-        const textMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
+        const textMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff , transparent: true , opacity: 1});
         const textMesh = new THREE.Mesh(textGeometry, textMaterial);
         textMesh.position.set(x, 1.8, z);
         textMesh.lookAt(camera.position);
@@ -108,7 +115,7 @@ function SkillsPage() {
       domElement.removeEventListener('mousemove', onMouseMove, false);
       renderer.dispose();
 
-      orbitDataRef.current.forEach(({ sphere, textMesh, lighted }) => {
+      orbitData.forEach(({ sphere, textMesh, lighted }) => {
         if (sphere.geometry) sphere.geometry.dispose();
         if (sphere.material) sphere.material.dispose();
         if (textMesh.geometry) textMesh.geometry.dispose();
