@@ -25,4 +25,77 @@ header, .skills_section {
     margin-top: 10vh;
 }
 
+.wrapper{
+  width: fit-content;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+
+
+
+.competences-element{
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.competences-element > p{
+  font-size: 1em;
+  color: var(--secondary-font-color);
+  text-align: center;
+  padding: 10px
+}
+
+.competences-element > h2{
+  font-size: 1.5em;
+  color: red;
+  text-align: center;
+  padding: 10px;
+}
+
+#nav-competences{
+  margin-top: -90px;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#nav-competences > button{
+  cursor: pointer;
+  font-size: 2em;
+  border: none;
+  border-radius: 20px;
+  color: var(--main-font-color);
+  width: fit-content;
+  height: 50px;
+  background-color: rgba(240, 248, 255, 0);
+  transition: 1s ease-in-out;
+}
+
+#nav-competences > button:hover{
+  scale: 1.1;
+}
+
+
+@media screen and (max-width: 1150px){
+  .wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 800px){
+    .wrapper{
+      margin: auto;
+      grid-template-columns: 1fr;
+    }
+  }
+}

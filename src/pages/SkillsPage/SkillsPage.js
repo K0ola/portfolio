@@ -140,15 +140,71 @@ function SkillsPage() {
         <h1>My Skills</h1>
         <div id="3D_scene" ref={sceneRef} />
       </header>
-      <div className="skills_section" id="dev">
-        <h2>Développement</h2>
-      </div>
-      <div className="skills_section" id="crea">
-        <h2>Création numérique</h2>
-      </div>
-      <div className="skills_section" id="soft">
-        <h2>Soft skills</h2>
-      </div>
+      <div className="wrapper">
+            <div className="competences-element">
+                <h2>Front-End</h2>
+
+                <p>HTML</p>
+                <p>CSS / SCSS</p>
+                <p>JavaScript</p>
+                <p>Bootstrap</p>
+                <p>React | en apprentissage</p>
+
+
+            </div>
+            <div className="competences-element">
+                <h2>Back-End</h2>
+
+                <p>JavaScript</p>
+                <p>Git</p>
+                <p>PHP</p>
+                <p>Python</p>
+                <p>Node.js</p>
+
+
+            </div>
+            <div className="competences-element">
+                <h2>Gestion de données</h2>
+
+                <p>MySQL</p>
+                <p>MCD | MLD</p>
+                <p>SQL</p>
+
+
+
+            </div>
+            <div className="competences-element">
+                <h2>Design</h2>
+
+                <p>UI / UX</p>
+                <p>Adobe PhotoShop</p>
+                <p>Adobe Illustrator</p>
+                <p>Figma</p>
+                <p>Design thinking</p>
+
+            </div>
+
+            <div className="competences-element">
+                <h2>Communication</h2>
+
+                <p>SEO</p>
+                <p>Production audio-visuelle</p>
+                <p>Adobe Premiere Pro</p>
+                <p>Adobe Audition</p>
+
+            </div>
+
+            <div className="competences-element">
+                <h2>Softs Skills</h2>
+
+                <p>Esprit d'équipe</p>
+                <p>Communication</p>
+                <p>Gestion du stress</p>
+                <p>Curiosité</p>
+                <p>Force de proposition</p>
+
+            </div>
+        </div>
     </section>
   );
 }
