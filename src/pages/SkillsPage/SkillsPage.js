@@ -148,7 +148,7 @@ function SkillsPage() {
                 <p>CSS / SCSS</p>
                 <p>JavaScript</p>
                 <p>Bootstrap</p>
-                <p>React | en apprentissage</p>
+                <p>React</p>
 
 
             </div>
