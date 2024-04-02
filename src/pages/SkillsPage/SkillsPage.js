@@ -24,7 +24,7 @@ function SkillsPage() {
     light.position.set(0, 8, 5);
     scene.add(light);
 
-    const ambientLight = new THREE.AmbientLight(0xFF0000, 0.03);
+    const ambientLight = new THREE.AmbientLight(0xFF0000, 0.08);
     scene.add(ambientLight);
 
 
@@ -49,12 +49,12 @@ function SkillsPage() {
         const angle = (Math.PI * 2 / skills.length) * index;
         const x = Math.cos(angle) * radius;
         const z = Math.sin(angle) * radius;
-        const lighted = new THREE.DirectionalLight(0x0000FF, 0.01);
+        const lighted = new THREE.DirectionalLight(0x0000FF, 0.075);
         lighted.position.set(x, 1, z);
         lighted.lookAt(x, 0, z)
         scene.add(lighted);
         const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
-        const sphereMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
+        const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
         const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
         sphere.position.set(x, 1, z);
         scene.add(sphere);
