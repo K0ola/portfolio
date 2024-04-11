@@ -32,11 +32,11 @@ function SkillsPage() {
     PointLight.position.set(0, 8, 0);
     scene.add(PointLight);
 
-    const modelLoader = new GLTFLoader();
-    modelLoader.load('assets/models/skills/cross-legged.glb', (gltf) => {
-      gltf.scene.scale.set(0.1, 0.1, 0.1);
-      scene.add(gltf.scene);
-    });
+    // const modelLoader = new GLTFLoader();
+    // modelLoader.load('assets/models/skills/cross-legged.glb', (gltf) => {
+    //   gltf.scene.scale.set(0.1, 0.1, 0.1);
+    //   scene.add(gltf.scene);
+    // });
 
     camera.position.z = 4;
     camera.position.y = 1.5;

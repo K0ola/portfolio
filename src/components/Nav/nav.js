@@ -20,7 +20,7 @@ function Nav() {
         'z': '/about', 'Z': '/about',
         'q': '/projects', 'Q': '/projects',
         's': '/skills', 'S': '/skills',
-        'd': '/hobbies', 'D': '/hobbies',
+        // 'd': '/hobbies', 'D': '/hobbies',
         'x': '/contact', 'X': '/contact'
       };
 
@@ -88,7 +88,7 @@ function Nav() {
               onMouseLeave={() => setMenuButtonState(isNavVisible ? 'after' : 'before')}>
         <img src={getMenuButtonImage()} alt="Menu" />
       </button>      <div className={`mobile-nav ${isNavVisible ? 'visible' : ''}`}>
-        {['/', '/about', '/projects', '/skills', '/hobbies', '/contact'].map((path, index) => 
+        {['/', '/about', '/projects', '/skills', '/contact'].map((path, index) => 
           <NavLink key={index} to={path} onClick={() => handleNavClick(path)}>
             {path === '/' ? 'Home' : path.substring(1)}
           </NavLink>
@@ -100,7 +100,7 @@ function Nav() {
           {renderNavLink("/about", "Z", "About")}
           {renderNavLink("/projects", "Q", "Projects")}
           {renderNavLink("/skills", "S", "Skills")}
-          {renderNavLink("/hobbies", "D", "Hobbies")}
+          {/* {renderNavLink("/hobbies", "D", "Hobbies")} */}
           {renderNavLink("/contact", "X", "Contact")}
         </ul>
       </nav>
