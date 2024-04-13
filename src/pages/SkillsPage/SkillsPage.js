@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 import './SkillsPage.css';
@@ -143,21 +143,19 @@ function SkillsPage() {
       <div className="wrapper">
             <div className="competences-element">
                 <h2>Front-End</h2>
-
+                <p>React</p>
                 <p>HTML</p>
                 <p>CSS / SCSS</p>
                 <p>JavaScript</p>
                 <p>Bootstrap</p>
-                <p>React</p>
 
 
             </div>
             <div className="competences-element">
                 <h2>Back-End</h2>
-
+                <p>PHP</p>
                 <p>JavaScript</p>
                 <p>Git</p>
-                <p>PHP</p>
                 <p>Python</p>
                 <p>Node.js</p>
 
