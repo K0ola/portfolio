@@ -12,7 +12,7 @@ function ProjectsPage() {
       id: 1,
       title: "DataViz",
       description: "Projet étudiant - Visualisation statistiques des Oscars depuis 1927",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "https://github.com/user/DataViz" },
         { label: "Visiter le projet", url: "https://dataviz.com/" }
@@ -24,7 +24,7 @@ function ProjectsPage() {
       id: 2,
       title: "K0la's Game",
       description: "Projet étudiant - Jeu | tour par tour| de stratégie en ligne",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "https://github.com/user/DataViz" },
         { label: "Visiter le projet", url: "https://dataviz.com/" }
@@ -36,7 +36,7 @@ function ProjectsPage() {
       id: 3,
       title: "ENT",
       description: "Projet étudiant - Plateforme de gestion des notes | emploi du temps | documents",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
@@ -48,7 +48,7 @@ function ProjectsPage() {
       id: 4,
       title: "Augma | ResaWeb",
       description: "Projet étudiant - Site de réservation de katana en ligne",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
@@ -60,7 +60,7 @@ function ProjectsPage() {
       id: 5,
       title: "Portrait Chinois",
       description: "Projet étudiant - Site web de portrait chinois interactif",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
@@ -72,7 +72,7 @@ function ProjectsPage() {
       id: 6,
       title: "Portfolio",
       description: "Projet personnel - Site web portfolio",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
@@ -84,7 +84,7 @@ function ProjectsPage() {
       id: 7,
       title: "Hangman",
       description: "Projet étudiant - Jeu du pendu en ligne",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
@@ -96,7 +96,7 @@ function ProjectsPage() {
       id: 8,
       title: "Todoom | Forum en PHP MVC",
       description: "Projet étudiant - Forum en PHP MVC",
-      imageUrl: "./assets/imgs/projects/dataviz_illu.png",
+      imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
         { label: "Visiter le projet", url: "" }
