@@ -143,6 +143,7 @@ function SkillsPage() {
       <div className="wrapper">
             <div className="competences-element">
                 <h2>Front-End</h2>
+                <p>ThreeJS</p>
                 <p>React</p>
                 <p>HTML</p>
                 <p>CSS / SCSS</p>
