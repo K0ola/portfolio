@@ -1,76 +1,61 @@
 header, .skills_section {
-    height: 80vh;
-    margin: 0;
-    padding: 0;
-
+  height: 50vh; /* Hauteur réduite du header */
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-
-
-#skills > h1{
-  font-family: 'Inspiration';
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);    
-  font-size: 10em;
-  margin: 1rem 0;
-}
-
-.skills_section h1 {
-    font-size: 3em;
-    color: var(--color-secondary);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin-top: 8vh;
-}
-
-
-
-.wrapper{
-  width: fit-content;
+.wrapper {
+  margin-top: -20vh;
+  width: 100%;
   position: relative;
   margin: auto;
-  margin-top: -30vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  align-items: start; /* Assure que tous les éléments commencent au même niveau en haut */
 }
 
-
-
-
-.competences-element{
-  width: 400px;
-  height: 300px;
+.competences-element {
+  min-height: 300px; /* Hauteur minimale pour uniformité */
   display: flex;
   flex-direction: column;
-}
-
-.competences-element > p{
-  font-size: 1em;
-  color: var(--secondary-font-color);
-  text-align: center;
-  padding: 10px
-}
-
-.competences-element > h2{
-  font-size: 1.5em;
-  color: red;
-  text-align: center;
+  justify-content: space-around; /* Distribution équilibrée du contenu */
   padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Effet d'ombre pour une meilleure visibilité */
+}
+
+.competences-element > p, .competences-element > h2 {
+  text-align: center; /* Centralisation du texte */
+  color: white; /* Contraste de couleur pour une meilleure lisibilité */
+}
+
+.competences-element > p {
+  font-size: 1.5em; /* Taille de la police pour les paragraphes */
+  margin: 5px 0; /* Espacement vertical entre les éléments */
+}
+
+.competences-element > h2 {
+  font-size: 2em; /* Taille de la police pour les titres */
+  color: red; /* Couleur rouge pour les titres pour un impact visuel */
 }
 
 
-
-@media screen and (max-width: 1150px){
-  .wrapper{
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 1200px) {
+  .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px; /* Trois colonnes pour les écrans moyens */
   }
+}
 
-  @media screen and (max-width: 800px){
-    .wrapper{
-      margin: auto;
-      grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 800px) {
+  header, .skills_section {
+      height: auto; /* Hauteur automatique pour s'adapter au contenu */
+  }
+  .wrapper {
+      margin-top: 0; /* Annulation de la marge négative */
+      grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+  }
+  .competences-element {
+      min-height: auto; /* Hauteur automatique pour s'adapter au contenu */
   }
 }

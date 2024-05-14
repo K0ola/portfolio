@@ -87,7 +87,8 @@ function Nav() {
               onMouseEnter={() => setMenuButtonState('hover')}
               onMouseLeave={() => setMenuButtonState(isNavVisible ? 'after' : 'before')}>
         <img src={getMenuButtonImage()} alt="Menu" />
-      </button>      <div className={`mobile-nav ${isNavVisible ? 'visible' : ''}`}>
+      </button>
+      <div className={`mobile-nav ${isNavVisible ? 'visible' : ''}`}>
         {['/', '/about', '/projects', '/skills', '/contact'].map((path, index) => 
           <NavLink key={index} to={path} onClick={() => handleNavClick(path)}>
             {path === '/' ? 'Home' : path.substring(1)}

@@ -10,12 +10,15 @@
 
 
 
-.wrapper {
+#projects > .wrapper {
+  margin-top: -300px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: center;
+  gap: 50px;
 }
+
 .card {
   width: 325px;
   height: 450px;
@@ -131,4 +134,51 @@
 .modal:not(.open) {
   pointer-events: none;
   opacity: 0;
+}
+
+
+.modal-content {
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  border: solid 1px #ffffff;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 90vh;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 200%;
+    max-width: none;
+  }
+
+  .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: none;
+  }  
+
+}
+
+.modal:not(.open) {
+  display: none;
 }

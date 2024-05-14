@@ -6,7 +6,7 @@ import AboutPage from '../pages/AboutPage/AboutPage.js';
 import ContactPage from '../pages/ContactPage/ContactPage.js';
 import ProjectsPage from '../pages/ProjectsPage/ProjectsPage.js';
 import SkillsPage from '../pages/SkillsPage/SkillsPage.js';
-import HobbiesPage from '../pages/HobbiesPage/HobbiesPage.js';
+// import HobbiesPage from '../pages/HobbiesPage/HobbiesPage.js';
 
 const LoadingScreen = () => (
   <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.5)' }}>
@@ -27,7 +27,7 @@ function App() {
           <Route path="/contact" element={<ContactPage setIsLoading={setIsLoading} />} />
           <Route path="/projects" element={<ProjectsPage setIsLoading={setIsLoading} />} />
           <Route path="/skills" element={<SkillsPage setIsLoading={setIsLoading} />} />
-          <Route path="/hobbies" element={<HobbiesPage setIsLoading={setIsLoading} />} />
+          {/* <Route path="/hobbies" element={<HobbiesPage setIsLoading={setIsLoading} />} /> */}
         </Routes>
       </BrowserRouter>
   );

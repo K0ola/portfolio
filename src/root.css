@@ -14,36 +14,52 @@
     src: url('../public/assets/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf');
 }
 
-*{
+/* Réinitialisation de base pour tous les éléments */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source_Code_Pro';
 }
 
-body{
+body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
 }
 
-section{
+section {
     padding: 30px;
 }
 
-header{
+header {
     height: 100vh;
 }
 
-h1{
+h1 {
     font-family: 'Inspiration';
     position: absolute;
     top: 18%;
     left: 50%;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);
     font-size: 9em;
     margin: 1rem 0;
     z-index: 5;
 }
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        top: 200px;
+        font-size: 6em;
+        width: 100%	;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 6em;
+    }
+  }
+  
 
 :root {
     --color-primary: #000000;
@@ -53,30 +69,17 @@ h1{
     --nav-height: 60px;
 }
 
-
+/* Styles pour les barres de défilement personnalisées */
 ::-webkit-scrollbar-track {
     display: none;
-    background: #f1f1f100;
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    display: none;
+}
 
-    background: #88888800;
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb {
     display: none;
+}
 
-    background: #55555500;
-  }
-  
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-
     width: 10px;
     height: 10px;
-  }
-  
+}

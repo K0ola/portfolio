@@ -38,13 +38,13 @@ function SkillsPage() {
     //   scene.add(gltf.scene);
     // });
 
-    camera.position.z = 4;
-    camera.position.y = 1.5;
+    camera.position.z = 2;
+    camera.position.y = 5;
 
-    const radius = 5;
+    const radius = 10;
     const fontLoader = new FontLoader();
     fontLoader.load('assets/fonts/helvetiker_regular.typeface.json', (font) => {
-      const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'SCSS', 'SQL', 'Python', 'THREEJS', 'Blender', 'Photoshop', 'Illustrator', 'UI/UX', 'PHP'];
+      const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'SCSS', 'SQL', 'Python', 'THREEJS', 'Blender', 'Photoshop', 'Illustrator', 'UI/UX', 'PHP', 'Node.js', 'Git', 'SEO', 'Figma', 'Design Thinking', 'Curiosite', 'Esprit d\'equipe', 'Communication', 'Gestion du stress', 'Force de proposition'];
       skills.forEach((skill, index) => {
         const angle = (Math.PI * 2 / skills.length) * index;
         const x = Math.cos(angle) * radius;
@@ -56,12 +56,12 @@ function SkillsPage() {
         const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
         const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff });
         const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-        sphere.position.set(x, 1, z);
+        sphere.position.set(x, 1.5, z);
         scene.add(sphere);
     
         const textGeometry = new TextGeometry(skill, { font, size: 0.2, height: 0.01 });
         textGeometry.center();
-        const textMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff , transparent: true , opacity: 1});
+        const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff , transparent: true , opacity: 1});
         const textMesh = new THREE.Mesh(textGeometry, textMaterial);
         textMesh.position.set(x, 1.8, z);
         textMesh.lookAt(camera.position);
@@ -168,6 +168,8 @@ function SkillsPage() {
                 <p>MySQL</p>
                 <p>MCD | MLD</p>
                 <p>SQL</p>
+
+
 
 
 

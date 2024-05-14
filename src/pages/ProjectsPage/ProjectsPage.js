@@ -14,7 +14,7 @@ function ProjectsPage() {
       description: "Projet étudiant - Visualisation statistiques des Oscars depuis 1927",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "https://github.com/user/DataViz" },
+        { label: "GitHub", url: "https://github.com/BinroLeCrab/Oscars-DataViz" },
         { label: "Visiter le projet", url: "https://dataviz.com/" }
       ],
       technologies: ["JavaScript", "D3.js", "HTML5", "CSS"],
@@ -38,7 +38,7 @@ function ProjectsPage() {
       description: "Projet étudiant - Plateforme de gestion des notes | emploi du temps | documents",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "" },
+        { label: "GitHub", url: "https://github.com/K0ola/ENT" },
         { label: "Visiter le projet", url: "" }
       ],
       technologies: ["PHP", "CSS", "HTML5", "JavaScript", "MySQL"],
@@ -50,7 +50,7 @@ function ProjectsPage() {
       description: "Projet étudiant - Site de réservation de katana en ligne",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "" },
+        { label: "GitHub", url: "https://github.com/K0ola/ResaWeb---Augma" },
         { label: "Visiter le projet", url: "" }
       ],
       technologies: ["PHP", "JavaScript", "CSS", "HTML5", "MySQL"],
@@ -62,7 +62,7 @@ function ProjectsPage() {
       description: "Projet étudiant - Site web de portrait chinois interactif",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "" },
+        { label: "GitHub", url: "https://github.com/K0ola/portrait-chinois" },
         { label: "Visiter le projet", url: "" }
       ],
       technologies: ["JavaScript", "CSS", "HTML5"],
@@ -74,8 +74,8 @@ function ProjectsPage() {
       description: "Projet personnel - Site web portfolio",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "" },
-        { label: "Visiter le projet", url: "" }
+        { label: "GitHub", url: "https://github.com/K0ola/portfolio" },
+        { label: "Visiter le projet", url: "https://arthur-zachary.dev" }
       ],
       technologies: ["React", "CSS", "ThreeJs", "HTML5", "JavaScript"],
       date: "2022-02-01"
@@ -86,8 +86,8 @@ function ProjectsPage() {
       description: "Projet étudiant - Jeu du pendu en ligne",
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
-        { label: "GitHub", url: "" },
-        { label: "Visiter le projet", url: "" }
+        { label: "GitHub", url: "https://github.com/K0ola/Hangman" },
+        { label: "Visiter le projet", url: "https://hangman.arthur-zachary.dev/" }
       ],
       technologies: ["React", "CSS", "HTML5", "JavaScript"],
       date: "2022-02-01"
@@ -99,7 +99,7 @@ function ProjectsPage() {
       imageUrl: "./assets/imgs/projects/dataviz_illu.jpg",
       links: [
         { label: "GitHub", url: "" },
-        { label: "Visiter le projet", url: "" }
+        { label: "Visiter le projet", url: "https://todoom.eu" }
       ],
       technologies: ["PHP", "CSS", "HTML5", "JavaScript", "MySQL"],
       date: "2022-02-01"
@@ -193,12 +193,22 @@ function ProjectsPage() {
             </div>
             <div className="modal-links">
               {selectedProject.links.map(link => (
-                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
+                <a key={link.url} href={link.url} target="_blank">{link.label}</a>
               ))}
             </div>
           </div>
         </div>
       )}
+      {/* <div className='crea_project'>
+        <img src='./assets/imgs/projects/dataviz_illu.jpg' alt='crea_project'/>
+        <div className='crea_project_contenu'>
+          <h2>Podcast Horreur</h2>
+          <p>Projet étudiant - Podcast de sensibilisation au harcelement scolaire</p>
+          <video controls>
+            <source src='./assets/videos/podcast_horreur.mp4' type='video/mp4' />
+          </video>
+      </div>
+      </div> */}
     </section>
   );
 }
