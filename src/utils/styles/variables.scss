@@ -1,0 +1,27 @@
+
+:root {
+    --color-bg: #d3d3d3;
+    --color-bg-reverse: #000000;
+    --color-text: #000000;
+
+    --color-under-text: #4b4b4b6f;
+
+    --color-link-hover: #5300b9;
+
+    --color-bg-nav: rgb(192, 192, 192);
+  }
+  
+  [data-theme='dark'] {
+    --color-bg: #1b1b1b;
+    --color-bg-reverse: #ffffff;
+    --color-text: #ffffff;
+
+    --color-bg-nav: rgb(47, 47, 47);
+  }
+  
+  [data-theme='retro'] {
+    --color-bg: #fef6e4;
+
+    --color-text: #001858;
+  }
+  

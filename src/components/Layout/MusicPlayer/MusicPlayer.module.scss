@@ -1,0 +1,28 @@
+.musicPlayer{
+    border-radius: 5px;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    width: 220px;
+    height: 70px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    &__cover{
+        width: 70px;
+        height: 70px;
+        background-color: blue;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        float: left;
+        }
+
+    &__info{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 150px;
+        height: 70px;
+        float: right;
+    }
+}
