@@ -16,7 +16,6 @@
 
 # librairies
  - SASS
- - GSAP
  - react-router-dom
  - react-scroll
  - threeJS
