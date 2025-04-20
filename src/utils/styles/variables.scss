@@ -8,7 +8,8 @@
 
     --color-link-hover: #5300b9;
 
-    --color-bg-nav: rgb(192, 192, 192);
+    --color-bg-nav: rgb(146, 146, 146);
+    --color-text-nav: #000000;
   }
   
   [data-theme='dark'] {
@@ -16,7 +17,8 @@
     --color-bg-reverse: #ffffff;
     --color-text: #ffffff;
 
-    --color-bg-nav: rgb(47, 47, 47);
+    --color-bg-nav: rgb(89, 89, 89);
+    --color-text-nav: #ffffff;
   }
   
   [data-theme='retro'] {
